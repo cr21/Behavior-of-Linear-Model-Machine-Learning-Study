@@ -91,17 +91,21 @@ for Dataset 4 (100:80) model is fitted well
 *  We will apply Logistic regression(SGDClassifier with logloss) on 'data' and check the feature importance 
 *  we will apply SVM(SGDClassifier with hinge) on 'data' and check the feature importance
 </pre>
-    ### 2.1.1 Experiment 1 Result 
+### 2.1.1 Experiment 1 Result 
+<pre>
     *   Logistic regression fits quiet well and accuracy is also good
     *   SVM linear failed to converge with more than 100000 iteration with hinge loss <br/>
  Highly variance nature of data is affecting the classifier behavior
-
+</pre>
 ## 2.2 Experiment 2 <br/>
 <pre>
 *  we will apply Logistic regression( SGDClassifier with log-loss ) on 'data' after standardization
 *  we will apply SVM(SGDClassifier with hinge loss) on 'data' after standardization
 </pre>
-    ### 2.2.1 Experiment 2 Result
+### 2.2.1 Experiment 2 Result
+<pre>
     *    Logistic regression fits quiet well and accuracy is also good with standardized feature
     *    SVM linear  converge with in  500 max iteration with hinge loss <br/>
     *    After Standardization SVM Linear converged super fast and accuracy is also increased to 0.92
+
+</pre>
