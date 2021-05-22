@@ -92,7 +92,7 @@ for Dataset 4 (100:80) model is fitted well
 *  we will apply SVM(SGDClassifier with hinge) on 'data' and check the feature importance
 </pre>
 ### 2.1.1 Experiment 1 Result 
-<pre>
+<pre background-color="orange">
     *   Logistic regression fits quiet well and accuracy is also good
     *   SVM linear failed to converge with more than 100000 iteration with hinge loss <br/>
  Highly variance nature of data is affecting the classifier behavior
@@ -109,3 +109,32 @@ for Dataset 4 (100:80) model is fitted well
     *    After Standardization SVM Linear converged super fast and accuracy is also increased to 0.92
 
 </pre>
+
+
+# 3. Experiment 3 : Linear Model performance on presence of outliers
+*   As a part of this experiment we will be working the regression problem and how regularization helps to get rid of outliers, and we will see how the hyperplane is changing in presence of outliers.
+
+
+    for each regularizer: 
+        for each outlier:
+            add the outlier to the data
+            fit the linear regression to the updated data
+            get the hyper plane
+            plot the hyperplane along with the data points
+
+
+
+![Linear Regression : alpha : 0.0001 ](https://i.imgur.com/O0Jzbds.png)
+
+
+![Linear Regression : alpha : 1 ](https://i.imgur.com/FoGiMRv.png)
+
+
+![Linear Regression : alpha : 100 ](https://i.imgur.com/LuHVjI2.png)
+
+
+
+## Observation
+* As we increase Alpha value hyper plane is not moving significantly, 
+increasing alpha value has little impace on position of hyper plane.
+
